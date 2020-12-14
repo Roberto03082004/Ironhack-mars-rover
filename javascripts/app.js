@@ -17,6 +17,35 @@ function turnLeft(rover){
   rover.direction = "N";
 }
 
+function turnRight(rover){
+  if (rover.direction == "N"){
+  rover.direction = "E"
+  console.log("Direction is E");
+}else if(rover.direction == "E"){
+  rover.direction = "S"
+  console.log("Direction is S");
+}else if(rover.direction == "S"){
+  rover.direction = "W"
+  console.log("Direction is W");
+}else if(rover.direction == "W"){
+  rover.direction = "N"
+  console.log("Direction is N");
+}
+
+function moveForward(rover){
+  if (rover.direction == "N"){
+  rover.direction = "S"
+  console.log("Direction is S");
+}else if(rover.direction == "S"){
+  rover.direction = "N"
+  console.log("Direction is N");
+}else if(rover.direction == "W"){
+  rover.direction = "E"
+  console.log("Direction is E");
+}else if(rover.direction == "E"){
+  rover.direction = "W"
+  console.log("Direction is W");
+}
 
 // ======================
 
